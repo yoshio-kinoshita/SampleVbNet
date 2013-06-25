@@ -6,6 +6,13 @@
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Label1.Text = "TextBoxの値が[" + TextBox1.Text + "]に変更されました。"
+
+        If Page.IsValid Then
+            ResultLabel.Text = "検証成功"
+            Label1.Text = "TextBoxの値が[" + TextBox1.Text + "]が入力されました。"
+        Else
+            ResultLabel.Text = "検証失敗"
+        End If
+
     End Sub
 End Class
