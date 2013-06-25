@@ -5,4 +5,7 @@
 
     End Sub
 
+    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Label1.Text = "TextBoxの値が[" + TextBox1.Text + "]に変更されました。"
+    End Sub
 End Class

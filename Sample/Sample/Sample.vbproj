@@ -81,6 +81,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SampleForm.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -102,6 +103,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SampleForm.aspx.designer.vb">
+      <DependentUpon>SampleForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SampleForm.aspx.vb">
+      <DependentUpon>SampleForm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

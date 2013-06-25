@@ -30,4 +30,31 @@ Partial Public Class SampleForm
     '''変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
     '''</remarks>
     Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Label2 コントロール。
+    '''</summary>
+    '''<remarks>
+    '''自動生成されたフィールド。
+    '''変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
+    '''</remarks>
+    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''TextBox1 コントロール。
+    '''</summary>
+    '''<remarks>
+    '''自動生成されたフィールド。
+    '''変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
+    '''</remarks>
+    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Button1 コントロール。
+    '''</summary>
+    '''<remarks>
+    '''自動生成されたフィールド。
+    '''変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
+    '''</remarks>
+    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
 End Class
