@@ -15,4 +15,20 @@
         End If
 
     End Sub
+
+    Protected Sub CustomValidator1_ServerValidate(source As Object, args As ServerValidateEventArgs) Handles CustomValidator1.ServerValidate
+        Dim result As String = Search(TextBox1.Text)
+
+        If (result = "") Then
+            args.IsValid = False
+        Else
+            args.IsValid = True
+        End If
+    End Sub
+
+    Private Function Search(p1 As String) As String
+        Return ""
+    End Function
+
+
 End Class

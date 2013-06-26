@@ -15,6 +15,7 @@
         <asp:Label ID="Label1" runat="server" Text="Label1の出力テキスト"></asp:Label><br />
         <asp:Label ID="Label2" runat="server" Text="テキストボックス"></asp:Label><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="テキストボックスが空です。" ControlToValidate="TextBox1"></asp:RequiredFieldValidator>
+        <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="カスタムバリデータエラー"></asp:CustomValidator>
         <br />
         <br />
         <asp:Button ID="Button1" runat="server" Text="実行" />

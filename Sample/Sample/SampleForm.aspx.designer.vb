@@ -59,6 +59,15 @@ Partial Public Class SampleForm
     Protected WithEvents RequiredFieldValidator1 As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
+    '''CustomValidator1 コントロール。
+    '''</summary>
+    '''<remarks>
+    '''自動生成されたフィールド。
+    '''変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
+    '''</remarks>
+    Protected WithEvents CustomValidator1 As Global.System.Web.UI.WebControls.CustomValidator
+
+    '''<summary>
     '''Button1 コントロール。
     '''</summary>
     '''<remarks>
