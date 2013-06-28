@@ -183,4 +183,13 @@ Partial Public Class SampleForm
     '''変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
     '''</remarks>
     Protected WithEvents CustomValidator2 As Global.System.Web.UI.WebControls.CustomValidator
+
+    '''<summary>
+    '''UpdatePanel2 コントロール。
+    '''</summary>
+    '''<remarks>
+    '''自動生成されたフィールド。
+    '''変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
+    '''</remarks>
+    Protected WithEvents UpdatePanel2 As Global.System.Web.UI.UpdatePanel
 End Class

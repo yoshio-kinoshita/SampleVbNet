@@ -43,6 +43,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.607, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\AjaxControlToolkit.Binary.NET4\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -83,10 +87,61 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ajax.aspx" />
+    <Content Include="AsyncFileUpload.aspx" />
+    <Content Include="CalendarExtender.aspx" />
+    <Content Include="ConfirmButtonExtender.aspx" />
+    <Content Include="DataGridView.aspx" />
+    <Content Include="Index.aspx" />
     <Content Include="SampleForm.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="UpdatePanel.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ajax.aspx.designer.vb">
+      <DependentUpon>Ajax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax.aspx.vb">
+      <DependentUpon>Ajax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AsyncFileUpload.aspx.designer.vb">
+      <DependentUpon>AsyncFileUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AsyncFileUpload.aspx.vb">
+      <DependentUpon>AsyncFileUpload.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CalendarExtender.aspx.designer.vb">
+      <DependentUpon>CalendarExtender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarExtender.aspx.vb">
+      <DependentUpon>CalendarExtender.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ConfirmButtonExtender.aspx.designer.vb">
+      <DependentUpon>ConfirmButtonExtender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmButtonExtender.aspx.vb">
+      <DependentUpon>ConfirmButtonExtender.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DataGridView.aspx.designer.vb">
+      <DependentUpon>DataGridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridView.aspx.vb">
+      <DependentUpon>DataGridView.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -111,6 +166,13 @@
     </Compile>
     <Compile Include="SampleForm.aspx.vb">
       <DependentUpon>SampleForm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="UpdatePanel.aspx.designer.vb">
+      <DependentUpon>UpdatePanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePanel.aspx.vb">
+      <DependentUpon>UpdatePanel.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
@@ -138,6 +200,10 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="js\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
