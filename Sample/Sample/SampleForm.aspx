@@ -20,7 +20,24 @@
         <br />
         <asp:Button ID="Button1" runat="server" Text="実行" />
         <p>
-            &nbsp;</p>
+            </p>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+                <asp:ScriptManager ID="ScriptManager1" runat="server">
+                </asp:ScriptManager>
+                <asp:Label ID="Label3" runat="server" Text="Select or enter a date:"></asp:Label>
+                <br />
+                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <br />
+                <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+                <br />
+                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                <br />
+                <asp:Button ID="Button2" runat="server" Text="Check Availability" />
+                <br />
+                <asp:Label ID="Label4" runat="server" Text="Label1"></asp:Label>
+            </ContentTemplate>
+        </asp:UpdatePanel>
         <asp:ListBox ID="ListBox1" runat="server">
             <asp:ListItem>米</asp:ListItem>
             <asp:ListItem>魚</asp:ListItem>
@@ -30,6 +47,36 @@
         <p>
             <asp:Label ID="ResultLabel" runat="server" Text="Label"></asp:Label>
         </p>
+        <asp:TreeView ID="TreeView1" runat="server">
+            <Nodes>
+                <asp:TreeNode Text="新しいノード" Value="新しいノード">
+                    <asp:TreeNode Text="新しいノード" Value="新しいノード">
+                        <asp:TreeNode Text="新しいノード" Value="新しいノード">
+                            <asp:TreeNode Text="新しいノード" Value="新しいノード"></asp:TreeNode>
+                            <asp:TreeNode Text="新しいノード" Value="新しいノード"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="新しいノード" Value="新しいノード">
+                            <asp:TreeNode Text="新しいノード" Value="新しいノード"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="新しいノード" Value="新しいノード"></asp:TreeNode>
+                    </asp:TreeNode>
+                </asp:TreeNode>
+                <asp:TreeNode Text="新しいノード" Value="新しいノード">
+                    <asp:TreeNode Text="新しいノード" Value="新しいノード"></asp:TreeNode>
+                </asp:TreeNode>
+                <asp:TreeNode Text="新しいノード" Value="新しいノード">
+                    <asp:TreeNode Text="新しいノード" Value="新しいノード"></asp:TreeNode>
+                </asp:TreeNode>
+                <asp:TreeNode Text="新しいノード" Value="新しいノード"></asp:TreeNode>
+                <asp:TreeNode Text="新しいノード" Value="新しいノード"></asp:TreeNode>
+                <asp:TreeNode Text="新しいノード" Value="新しいノード">
+                    <asp:TreeNode Text="新しいノード" Value="新しいノード">
+                        <asp:TreeNode Text="新しいノード" Value="新しいノード"></asp:TreeNode>
+                    </asp:TreeNode>
+                </asp:TreeNode>
+            </Nodes>
+        </asp:TreeView>
+        <asp:CustomValidator ID="CustomValidator2" runat="server" ErrorMessage="CustomValidator"></asp:CustomValidator>
     </form>
 </body>
 </html>
